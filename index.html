@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>主頁</title>
     <style>
+        body {
+    background-image: url('https://media.discordapp.net/attachments/1280041550038175859/1281265723360018444/FB_IMG_1725468580835.png?ex=66db1731&is=66d9c5b1&hm=e35bb1e305cdd265523a4c9fe103f626b41d79f4aa1d0c2ecdaebe86747dda76&=&format=webp&quality=lossless&width=873&height=492');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; /* 讓背景固定 */
+}
         .button {
             display: inline-block;
             padding: 10px 20px;
             font-size: 16px;
             color: #fff;
-            background-color: #007bff;
+            background-color: #9F4D95;
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
@@ -20,6 +26,24 @@
 
         .button:hover {
             background-color: #0056b3;
+        }
+        .large-text {
+            font-size: 48px; /* 调整大小 */
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%; /* 确保图片不会超出容器 */
+            height: auto; /* 让图片保持比例 */
+        }
+
+        /* 设置容器的最大宽度 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* 轻微透明的背景 */
+            border-radius: 10px;
         }
     </style>
 </head>
