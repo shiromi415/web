@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音樂播放器</title>
+    <link rel="stylesheet" href="style.css"> <!-- 可加入自定義CSS -->
+</head>
+<body>
+    <div class="player">
+        <h1>簡易音樂播放器</h1>
+        
+        <!-- 音樂選單 -->
+        <label for="song-select">選擇一首歌曲：</label>
+        <select id="song-select" onchange="changeSong()">
+            <option value="YOASOBI-勇者.mp3">YOASOBI-勇者</option>
+            <option value="Blue Archive-Pixel time.mp3">Blue Archive-Pixel time</option>
+        </select>
+
+        <!-- 音樂播放器 -->
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="song1.mp3" type="audio/mp3">
+            您的瀏覽器不支援音樂播放功能。
+        </audio>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript 檔案 -->
+</body>
+</html>
