@@ -6,8 +6,10 @@ function changeSong() {
     // 取得選擇的歌曲
     var selectedSong = songSelect.value;
     
-    // 更新音樂檔案
+    // 更新音樂檔案的來源
     audioSource.src = selectedSong;
-    audioPlayer.load();  // 重新載入新的音樂
-    audioPlayer.play();  // 自動播放新音樂
+    
+    // 重新載入新的音樂檔案，並嘗試播放
+    audioPlayer.load();
+    audioPlayer.play();
 }
