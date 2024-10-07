@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>音樂播放器</title>
-    <link rel="stylesheet" href="style.css"> <!-- 可加入自定義CSS -->
+    <link rel="stylesheet" href="audio.css"> <!-- 可加入自定義CSS -->
+<style>
+        body {
+    background-image: url('https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d5zipqbkdnyxurrm2pcr7mc2/bafkreiamaeo76vt2yfoz4ixiadaebym5ifnm7p7uyvlge4rfwjbs7tu7qa@jpeg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; /* 讓背景固定 */
+}
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #9F4D95;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .button {
+  margin-bottom: 10px; /* 調整垂直間距 */
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .large-text {
+            font-size: 48px; /* 调整大小 */
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%; /* 确保图片不会超出容器 */
+            height: auto; /* 让图片保持比例 */
+        }
+
+        /* 设置容器的最大宽度 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* 轻微透明的背景 */
+            border-radius: 10px;
+        }
+</style>
+
 </head>
 <body>
     <div class="player">
@@ -26,4 +71,6 @@
 
     <script src="script.js"></script> <!-- JavaScript 檔案 -->
 </body>
+<a onclick="window.open('https://shiromi415.github.io/web/index','_self')" class="button">回主頁</a >
 </html>
+
